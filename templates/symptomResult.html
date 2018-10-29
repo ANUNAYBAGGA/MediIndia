@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Disease</title>
+      <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="{{url_for('static',filename = "style2.css")}}">
+</head>
+<body>
+    <div class="main">
+        <h1>Disease Likeliness</h1>
+        <h1>You most probably have: </h1>
+        <br>
+        <center><h2>{{disease}}<h2></center><br>
+        <h1>OUR DIAGNOSIS : </h1>
+
+        <br>
+        <center><h2>{{remedy}}
+        </h2></center><br>
+    </div>
+
+</body>
+<html>

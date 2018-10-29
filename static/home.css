@@ -1,0 +1,19 @@
+body
+{
+	background: white;
+	margin :0;
+}
+.navbar
+{
+	background: #02b7c2;
+	padding-top: 2%;
+	height: 100px;
+}
+
+.navbar-default .navbar-nav>li>a 
+{
+    font-size: 1.8em;
+    color: white;
+    font-weight: bold;
+    /*text-shadow: 2px 2px 5px red;*/
+}

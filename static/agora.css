@@ -1,0 +1,19 @@
+body
+{
+	background: #02b7c2;
+	margin:0;
+}
+
+h1
+{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.a1
+{
+	border-radius: 500px;
+	padding: 50px;
+}

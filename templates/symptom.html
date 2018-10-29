@@ -1,0 +1,348 @@
+
+<!-- <html lang="en">
+  <head> -->
+    <!-- Required meta tags -->
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <!-- Bootstrap CSS -->
+    <!-- //<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> -->
+
+    <!-- <title>Symptoms</title>
+    <body>
+        <form class=form>
+
+            <h2 class=heading>Choose your symptoms</h2>
+            <div class=line>
+                <div id="ck-button">
+                        <label>
+                        <input type="checkbox" value="1"><span>sym1</span>
+                        </label>
+                </div>
+                <div id="ck-button">
+                        <label>
+                        <input type="checkbox" value="1"><span>sym1</span>
+                        </label>
+                </div>
+                <div id="ck-button">
+                        <label>
+                        <input type="checkbox" value="1"><span>sym1</span>
+                        </label>
+                </div>
+
+
+        </form> -->
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout Form</title>
+
+
+
+      <link rel="stylesheet" href="{{url_for('static',filename = "style1.css")}}">
+
+
+</head>
+
+<body>
+        <h1>Symptom Form</h1>
+
+            <div class="container">
+                    <form class="form cf" method = "POST">
+                        <div id="realTimeContents">
+                        <section class="plan cf">
+                            <h2>Choose your symptoms:</h2>
+
+                            <input type="checkbox" name="itching" id="itching" value=1><label class="free-label four col" for="itching">itching</label>
+                            <input type="checkbox" name="skin rash" id="skin rash" value=1><label class="basic-label four col" for="skin rash">skin rash</label>
+                            <input type="checkbox" name="skin eruptions" id="skin eruptions" value=1><label class="premium-label four col" for="skin eruptions">skin eruptions</label>
+                            <input type="checkbox" name="sneezing" id="sneezing" value=1><label class="free-label four col" for="sneezing">sneezing</label>
+                            <input type="checkbox" name="shivering" id="shivering" value=1><label class="free-label four col" for="shivering">shivering</label>
+                            <input type="checkbox" name="chills" id="chills" value=1><label class="free-label four col" for="chills">chills</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="joint pain" id="joint pain" value=1><label class="free-label four col" for="joint pain">joint pain</label>
+                            <input type="checkbox" name="stomach pain" id="stomach pain" value=1><label class="free-label four col" for="stomach pain">stomach pain</label>
+                            <input type="checkbox" name="acidity" id="acidity" value=1><label class="free-label four col" for="acidity">acidity</label>
+                            <input type="checkbox" name="ulcers on tongue" id="ulcers on tongue" value=1><label class="free-label four col" for="ulcers on tongue">ulcers on tongue</label>
+                            <input type="checkbox" name="muscle wasting" id="muscle wasting" value=1><label class="free-label four col" for="muscle wasting">muscle wasting</label>
+                            <input type="checkbox" name="vomitting" id="vomitting" value=1><label class="free-label four col" for="vomitting">vomitting</label>
+
+
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="burning micturition" id="burning micturition" value=1><label class="free-label four col" for="burning micturition">burning micturition</label>
+                            <input type="checkbox" name="spotting urination" id="spotting urination" value=1><label class="free-label four col" for="spotting urination">spotting urination</label>
+                            <input type="checkbox" name="fatigue" id="fatigue" value=1><label class="free-label four col" for="fatigue">fatigue</label>
+                            <input type="checkbox" name="weight gain" id="weight gain" value=1><label class="free-label four col" for="weight gain">weight gain</label>
+                            <input type="checkbox" name="anxiety" id="anxiety" value=1><label class="free-label four col" for="anxiety">anxiety</label>
+                            <input type="checkbox" name="cold hands and feet" id="cold hands and feet" value=1><label class="free-label four col" for="cold hands and feet">cold hands and feet</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="mood swings" id="mood swings" value=1><label class="free-label four col" for="mood swings">mood swings</label>
+                            <input type="checkbox" name="weight loss" id="weight loss" value=1><label class="free-label four col" for="weight loss">weight loss</label>
+                            <input type="checkbox" name="restlessness" id="restlessness" value=1><label class="free-label four col" for="restlessness">restlessness</label>
+                            <input type="checkbox" name="lethargy" id="lethargy" value=1><label class="free-label four col" for="lethargy">lethargy</label>
+                            <input type="checkbox" name="patches in throat" id="patches in throat" value=1><label class="free-label four col" for="patches in throat">patches in throat</label>
+                            <input type="checkbox" name="irregular sugar level" id="irregular sugar level" value=1><label class="free-label four col" for="irregular sugar level">irregular sugar level</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="cough" id="cough" value=1><label class="free-label four col" for="cough">cough</label>
+                            <input type="checkbox" name="high fever" id="high fever" value=1><label class="free-label four col" for="high fever">high fever</label>
+                            <input type="checkbox" name="sunken eyes" id="sunken eyes" value=1><label class="free-label four col" for="sunken eyes">sunken eyes</label>
+                            <input type="checkbox" name="breathlessness" id="breathlessness" value=1><label class="free-label four col" for="breathlessness">breathlessness</label>
+                            <input type="checkbox" name="sweating" id="sweating" value=1><label class="free-label four col" for="sweating">sweating</label>
+                            <input type="checkbox" name="dehydration" id="dehydration" value=1><label class="free-label four col" for="dehydration">dehydration</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="indigestion" id="indigestion" value=1><label class="free-label four col" for="indigestion">indigestion</label>
+                            <input type="checkbox" name="headache" id="headache" value=1><label class="free-label four col" for="headache">headache</label>
+                            <input type="checkbox" name="yellowish skin" id="yellowish skin" value=1><label class="free-label four col" for="yellowish skin">yellowish skin</label>
+                            <input type="checkbox" name="dark urnine" id="dark urnine" value=1><label class="free-label four col" for="dark urnine">dark urnine</label>
+                            <input type="checkbox" name="nausea" id="nausea" value=1><label class="free-label four col" for="nausea">nausea</label>
+                            <input type="checkbox" name="loss of appetite" id="loss of appetite" value=1><label class="free-label four col" for="loss of appetite">loss of appetite</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="pain behind eyes" id="pain behind eyes" value=1><label class="free-label four col" for="pain behind eyes">pain behind eyes</label>
+                            <input type="checkbox" name="back pain" id="back pain" value=1><label class="free-label four col" for="back pain">back pain</label>
+                            <input type="checkbox" name="constipation" id="constipation" value=1><label class="free-label four col" for="constipation">constipation</label>
+                            <input type="checkbox" name="abdominal pain" id="abdominal pain" value=1><label class="free-label four col" for="abdominal pain">abdominal pain</label>
+                            <input type="checkbox" name="diarrhoea" id="diarrhoea" value=1><label class="free-label four col" for="diarrhoea">diarrhoea</label>
+                            <input type="checkbox" name="mild fever" id="mild fever" value=1><label class="free-label four col" for="mild fever">mild fever</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="yellow urine" id="yellow urine" value=1><label class="free-label four col" for="yellow urine">yellow urine</label>
+                            <input type="checkbox" name="yellowing of eyes" id="yellowing of eyes" value=1><label class="free-label four col" for="yellowing of eyes">yellowing of eyes</label>
+                            <input type="checkbox" name="acute liver failure" id="acute liver failure" value=1><label class="free-label four col" for="acute liver failure">acute liver failure</label>
+                            <input type="checkbox" name="fluid overload" id="fluid overload" value=1><label class="free-label four col" for="fluid overload">fluid overload</label>
+                            <input type="checkbox" name="swelling of stomach" id="swelling of stomach" value=1><label class="free-label four col" for="swelling of stomach">swelling of stomach</label>
+                            <input type="checkbox" name="swelled lymph nodes" id="swelled lymph nodes" value=1><label class="free-label four col" for="swelled lymph nodes">swelled lymph nodes</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="malaise" id="malaise" value=1><label class="free-label four col" for="malaise">malaise</label>
+                            <input type="checkbox" name="blurred and distorted vision" id="blurred and distorted vision" value=1><label class="free-label four col" for="blurred and distorted vision">blurred and distorted vision</label>
+                            <input type="checkbox" name="phlegm" id="phlegm" value=1><label class="free-label four col" for="phlegm">phlegm</label>
+                            <input type="checkbox" name="throat irritation" id="throat irritation" value=1><label class="free-label four col" for="throat irritation">throat irritation</label>
+                            <input type="checkbox" name="redness of eyes" id="redness of eyes" value=1><label class="free-label four col" for="redness of eyes">redness of eyes</label>
+                            <input type="checkbox" name="sinus pressure " id="sinus pressure " value=1><label class="free-label four col" for="sinus pressure ">sinus pressure </label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="runny nose" id="runny nose" value=1><label class="free-label four col" for="runny nose">runny nose</label>
+                            <input type="checkbox" name="congestion" id="congestion" value=1><label class="free-label four col" for="congestion">congestion</label>
+                            <input type="checkbox" name="chest pain" id="chest pain" value=1><label class="free-label four col" for="chest pain">chest pain</label>
+                            <input type="checkbox" name="weakness in limbs" id="weakness in limbs" value=1><label class="free-label four col" for="weakness in limbs">weakness in limbs</label>
+                            <input type="checkbox" name="fast heart rate" id="fast heart rate" value=1><label class="free-label four col" for="fast heart rate">fast heart rate</label>
+                            <input type="checkbox" name="pain during bowel movements" id="pain during bowel movements" value=1><label class="free-label four col" for="pain during bowel movements">pain during bowel movements</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="pain in anal region" id="pain in anal region" value=1><label class="free-label four col" for="pain in anal region">pain in anal region</label>
+                            <input type="checkbox" name="blood in stool" id="blood in stool" value=1><label class="free-label four col" for="blood in stool">blood in stool</label>
+                            <input type="checkbox" name="irritation in anus" id="irritation in anus" value=1><label class="free-label four col" for="irritation in anus">irritation in anus</label>
+                            <input type="checkbox" name="neck pain" id="neck pain" value=1><label class="free-label four col" for="neck pain">neck pain</label>
+                            <input type="checkbox" name="dizziness" id="dizziness" value=1><label class="free-label four col" for="dizziness">dizziness</label>
+                            <input type="checkbox" name="cramps" id="cramps" value=1><label class="free-label four col" for="cramps">cramps</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="bruising" id="bruising" value=1><label class="free-label four col" for="bruising">bruising</label>
+                            <input type="checkbox" name="obesity" id="obesity" value=1><label class="free-label four col" for="obesity">obesity</label>
+                            <input type="checkbox" name="swollen legs" id="swollen legs" value=1><label class="free-label four col" for="swollen legs">swollen legs</label>
+                            <input type="checkbox" name="swollen blood vessels" id="swollen blood vessels" value=1><label class="free-label four col" for="swollen blood vessels">swollen blood vessels</label>
+                            <input type="checkbox" name="puffy face and eyes" id="puffy face and eyes" value=1><label class="free-label four col" for="puffy face and eyes">puffy face and eyes</label>
+                            <input type="checkbox" name="enlarged thyroid" id="enlarged thyroid" value=1><label class="free-label four col" for="enlarged thyroid">enlarged thyroid</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="brittle nails" id="brittle nails" value=1><label class="free-label four col" for="brittle nails">brittle nails</label>
+                            <input type="checkbox" name="swollen extremeties" id="swollen extremeties" value=1><label class="free-label four col" for="swollen extremeties">swollen extremeties</label>
+                            <input type="checkbox" name="excessive hunger" id="excessive hunger" value=1><label class="free-label four col" for="excessive hunger">excessive hunger</label>
+                            <input type="checkbox" name="extra marital contacts" id="extra marital contacts" value=1><label class="free-label four col" for="extra marital contacts">extra marital contacts</label>
+                            <input type="checkbox" name="drying and tingling lips" id="drying and tingling lips" value=1><label class="free-label four col" for="drying and tingling lips">drying and tingling lips</label>
+                            <input type="checkbox" name="slurred speech" id="slurred speech" value=1><label class="free-label four col" for="slurred speech">slurred speech</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="knee pain" id="knee pain" value=1><label class="free-label four col" for="knee pain">knee pain</label>
+                            <input type="checkbox" name="hip joint pain" id="hip joint pain" value=1><label class="free-label four col" for="hip joint pain">hip joint pain</label>
+                            <input type="checkbox" name="muscle weekness" id="muscle weekness" value=1><label class="free-label four col" for="muscle weekness">muscle weekness</label>
+                            <input type="checkbox" name="stiff neck" id="stiff neck" value=1><label class="free-label four col" for="stiff neck">stiff neck</label>
+                            <input type="checkbox" name="swelling joints" id="swelling joints" value=1><label class="free-label four col" for="swelling joints">swelling joints</label>
+                            <input type="checkbox" name="movement stiffness" id="movement stiffness" value=1><label class="free-label four col" for="movement stiffness">movement stiffness</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="spinning movements" id="spinning movements" value=1><label class="free-label four col" for="spinning movements">spinning movements</label>
+                            <input type="checkbox" name="loss of balance" id="loss of balance" value=1><label class="free-label four col" for="loss of balance">loss of balance</label>
+                            <input type="checkbox" name="unsteadiness" id="unsteadiness" value=1><label class="free-label four col" for="unsteadiness">unsteadiness</label>
+                            <input type="checkbox" name="weakness of one body side" id="weakness of one body side" value=1><label class="free-label four col" for="weakness of one body side">weakness of one body side</label>
+                            <input type="checkbox" name="loss of smell" id="loss of smell" value=1><label class="free-label four col" for="loss of smell">loss of smell</label>
+                            <input type="checkbox" name="bladder discomfort" id="bladder discomfort" value=1><label class="free-label four col" for="bladder discomfort">bladder discomfort</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="foul smell of urine" id="foul smell of urine" value=1><label class="free-label four col" for="foul smell of urine">foul smell of urine</label>
+                            <input type="checkbox" name="continuous feel of urine" id="continuous feel of urine" value=1><label class="free-label four col" for="continuous feel of urine">continuous feel of urine</label>
+                            <input type="checkbox" name="passage of gases" id="passage of gases" value=1><label class="free-label four col" for="passage of gases">passage of gases</label>
+                            <input type="checkbox" name="internal itching" id="internal itching" value=1><label class="free-label four col" for="internal itching">internal itching</label>
+                            <input type="checkbox" name="toxic look" id="toxic look" value=1><label class="free-label four col" for="toxic look">toxic look</label>
+                            <input type="checkbox" name="depression" id="depression" value=1><label class="free-label four col" for="depression">depression</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="irritability" id="irritability" value=1><label class="free-label four col" for="irritability">irritability</label>
+                            <input type="checkbox" name="muscle pain" id="muscle pain" value=1><label class="free-label four col" for="muscle pain">muscle pain</label>
+                            <input type="checkbox" name="altered sensorium" id="altered sensorium" value=1><label class="free-label four col" for="altered sensorium">altered sensorium</label>
+                            <input type="checkbox" name="red spots over body" id="red spots over body" value=1><label class="free-label four col" for="red spots over body">red spots over body</label>
+                            <input type="checkbox" name="belly pain" id="belly pain" value=1><label class="free-label four col" for="belly pain">belly pain</label>
+                            <input type="checkbox" name="abnormal menstruation" id="abnormal menstruation" value=1><label class="free-label four col" for="abnormal menstruation">abnormal menstruation</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="dischromic patches" id="dischromic patches" value=1><label class="free-label four col" for="dischromic patches">dischromic patches</label>
+                            <input type="checkbox" name="watering from eyes" id="watering from eyes" value=1><label class="free-label four col" for="watering from eyes">watering from eyes</label>
+                            <input type="checkbox" name="increased appetite" id="increased appetite" value=1><label class="free-label four col" for="increased appetite">increased appetite</label>
+                            <input type="checkbox" name="polyuria" id="polyuria" value=1><label class="free-label four col" for="polyuria">polyuria</label>
+                            <input type="checkbox" name="family history" id="family history" value=1><label class="free-label four col" for="family history">family history</label>
+                            <input type="checkbox" name="mucoid sputum" id="mucoid sputum" value=1><label class="free-label four col" for="mucoid sputum">mucoid sputum</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="rusty sputum" id="rusty sputum" value=1><label class="free-label four col" for="rusty sputum">rusty sputum</label>
+                            <input type="checkbox" name="lack of concentration" id="lack of concentration" value=1><label class="free-label four col" for="lack of concentration">lack of concentration</label>
+                            <input type="checkbox" name="visual disturbances" id="visual disturbances" value=1><label class="free-label four col" for="visual disturbances">visual disturbances</label>
+                            <input type="checkbox" name="recieving blood transfusion" id="recieving blood transfusion" value=1><label class="free-label four col" for="recieving blood transfusion">recieving blood transfusion</label>
+                            <input type="checkbox" name="receiving unsterile injections" id="receiving unsterile injections" value=1><label class="free-label four col" for="receiving unsterile injections">receiving unsterile injections</label>
+
+
+
+
+                            <input type="checkbox" name="coma" id="coma" value=1><label class="free-label four col" for="coma">coma</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="stomach bleeding" id="stomach bleeding" value=1><label class="free-label four col" for="stomach bleeding">stomach bleeding</label>
+                            <input type="checkbox" name="distention of abdomen" id="distention of abdomen" value=1><label class="free-label four col" for="distention of abdomen">distention of abdomen</label>
+                            <input type="checkbox" name="alcohol addict" id="alcohol addict" value=1><label class="free-label four col" for="alcohol addict">alcohol addict</label>
+                            <input type="checkbox" name="fluid overload" id="fluid overload" value=1><label class="free-label four col" for="fluid overload">fluid overload</label>
+                            <input type="checkbox" name="blood in sputum" id="blood in sputum" value=1><label class="free-label four col" for="blood in sputum">blood in sputum</label>
+                            <input type="checkbox" name="prominent veins on calf" id="prominent veins on calf" value=1><label class="free-label four col" for="prominent veins on calf">prominent veins on calf</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="palpitations" id="palpitations" value=1><label class="free-label four col" for="palpitations">palpitations</label>
+                            <input type="checkbox" name="painful walking" id="painful walking" value=1><label class="free-label four col" for="painful walking">painful walking</label>
+                            <input type="checkbox" name="pus filled pimples" id="pus filled pimples" value=1><label class="free-label four col" for="pus filled pimples">pus filled pimples</label>
+                            <input type="checkbox" name="blackheads" id="blackheads" value=1><label class="free-label four col" for="blackheads">blackheads</label>
+                            <input type="checkbox" name="scurring" id="scurring" value=1><label class="free-label four col" for="scurring">scurring</label>
+                            <input type="checkbox" name="skin peeling" id="skin peeling" value=1><label class="free-label four col" for="skin peeling">skin peeling</label>
+
+                        </section>
+                        <section class="payment-plan cf">
+                            <input type="checkbox" name="silver like dusting" id="silver like dusting" value=1><label class="free-label four col" for="silver like dusting">silver like dusting</label>
+                            <input type="checkbox" name="small dents in nails" id="small dents in nails" value=1><label class="free-label four col" for="small dents in nails">small dents in nails</label>
+                            <input type="checkbox" name="inflammatory nails" id="inflammatory nails" value=1><label class="free-label four col" for="inflammatory nails">inflammatory nails</label>
+                            <input type="checkbox" name="blister" id="blister" value=1><label class="free-label four col" for="blister">blister</label>
+                            <input type="checkbox" name="red sore arround nose" id="red sore arround nose" value=1><label class="free-label four col" for="red sore arround nose">red sore arround nose</label>
+                            <input type="checkbox" name="yellow crust ooze" id="yellow crust ooze" value=1><label class="free-label four col" for="yellow crust ooze">yellow crust ooze</label>
+                            <div>
+
+                        </section>
+                        <input class="submit" type="submit" value="Submit" name = "Submit">
+                    </form>
+                </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        function searchAndHighlight(searchTerm, selector) {
+    if (searchTerm) {
+        //var wholeWordOnly = new RegExp("\\g"+searchTerm+"\\g","ig"); //matches whole word only
+        //var anyCharacter = new RegExp("\\g["+searchTerm+"]\\g","ig"); //matches any word with any of search chars characters
+        var selector = selector || "#realTimeContents"; //use body as selector if none provided
+        var searchTermRegEx = new RegExp(searchTerm, "ig");
+        var matches = $(selector).text().match(searchTermRegEx);
+        if (matches != null && matches.length > 0) {
+            $('.highlighted').removeClass('highlighted'); //Remove old search highlights
+
+            //Remove the previous matches
+            $span = $('#realTimeContents span');
+            $span.replaceWith($span.html());
+
+    if (searchTerm === "&") {
+        searchTerm = "&amp;";
+        searchTermRegEx = new RegExp(searchTerm, "ig");
+    }
+            $(selector).html($(selector).html().replace(searchTermRegEx, "<span class='match'>" + searchTerm + "</span>"));
+            $('.match:first').addClass('highlighted');
+
+            var i = 0;
+
+            $('.next_h').off('click').on('click', function () {
+                i++;
+
+                if (i >= $('.match').length) i = 0;
+
+                $('.match').removeClass('highlighted');
+                $('.match').eq(i).addClass('highlighted');
+                $('.ui-mobile-viewport').animate({
+                    scrollTop: $('.match').eq(i).offset().top
+                }, 300);
+            });
+            $('.previous_h').off('click').on('click', function () {
+
+                i--;
+
+                if (i < 0) i = $('.match').length - 1;
+
+                $('.match').removeClass('highlighted');
+                $('.match').eq(i).addClass('highlighted');
+                $('.ui-mobile-viewport').animate({
+                    scrollTop: $('.match').eq(i).offset().top
+                }, 300);
+            });
+
+
+
+
+            if ($('.highlighted:first').length) { //if match found, scroll to where the first one appears
+                $(window).scrollTop($('.highlighted:first').position().top);
+            }
+            return true;
+        }
+    }
+    return false;
+}
+
+$(document).on('click', '.searchButtonClickText_h', function (event) {
+
+    $(".highlighted").removeClass("highlighted").removeClass("match");
+    if (!searchAndHighlight($('.textSearchvalue_h').val())) {
+        alert("No results found");
+    }
+
+
+});
+    </script>
+
+</body>
+</html>
